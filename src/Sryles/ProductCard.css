@@ -1,0 +1,113 @@
+/* .childCard{
+    width: 250px;
+} */
+
+.ProductsContainer{
+    display: flex;
+    justify-content: center;
+}
+.cardProduct{
+    
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.5px 0.5px 2px #e7e6e6 ;
+   
+    width: 15rem ;
+    /* padding: 5px 10px; */
+    margin: 5px 10px;
+    flex-grow: 0;
+    border-radius: 10px;
+    background-color: #faf9f9;
+    
+    
+    /* align-items: center; */
+   
+}
+
+
+.cardProduct img{
+    
+  
+    max-width: 90%;
+    margin: 0px auto ;
+    
+
+   
+}
+
+
+.RateStarImg{
+
+    width: 15px;
+    /* margin: 0px 5px ; */
+    
+}
+
+
+
+
+@media screen and (max-width:770px) {
+    .ProductsContainer{
+    
+        justify-content: start;
+    }
+
+    .cardProduct{
+    
+       
+        width: 10rem ;
+        padding: 5px 10px;
+        margin: 5px 10px;
+        flex-grow: 0;
+        
+        /* align-items: center; */
+       
+    }
+
+}
+
+
+
+@media screen and (max-width:530px) {
+   
+   
+
+    .cardProduct{
+    
+       
+        width: 8rem ;
+        padding: 0px 2px;
+        border: 0.5 solid rgb(115, 115, 115);
+        margin: 5px 5px;
+        flex-grow: 0;
+        
+        
+        /* align-items: center; */
+       
+    }
+
+}
+
+
+@media screen and (max-width:320px) {
+   
+    .cardProduct{
+    
+       
+        /* width: 12rem ; */
+        padding: 10px 5px;
+        border: 0.5px solid rgb(115, 115, 115);
+        margin: 5px 5px;
+        flex-grow: 0;
+
+
+        /* width: 8rem ; */
+       
+        /* align-items: center; */
+       
+    }
+
+}
+
+
+

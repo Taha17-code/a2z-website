@@ -1,0 +1,100 @@
+.CartContainer{
+
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+}
+
+.ConponBox{
+
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.ConponBox sapn {
+    width: 100%;
+    /* margin-top: 20px; */
+    border: none;
+    padding: 4px;
+    background-color: #87ABDD;
+    color: whitesmoke;
+    
+}
+
+
+.buyButton {
+
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    padding: 4px;
+    background-color: #87ABDD;
+    color: whitesmoke;
+}
+
+
+
+.productCartImg{
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.Delet-Price{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+@media screen and (max-width:700px) {
+    
+
+    .CartContainer{
+
+        flex-direction: column;
+       
+    }
+    
+
+    .Delet-Price{
+
+    
+        flex-direction: row;
+      
+    }
+
+    .productCartImg{
+        width: 100%;
+      
+        /* padding: 10px; */
+    }
+
+    .productCartImgPP{
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:300px) {
+    
+
+ 
+  
+
+    .productCartImg{
+        width: 100%;
+      
+        /* padding: 10px; */
+    }
+
+}

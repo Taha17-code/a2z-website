@@ -1,0 +1,17 @@
+.LiSubHeader{
+    color: rgb(150, 149, 149);
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    
+    
+}
+
+.LiSubHeader:hover{
+    border-bottom: 2px solid #ADCAF6 ;
+
+
+    
+}

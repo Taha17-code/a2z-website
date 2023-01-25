@@ -1,0 +1,47 @@
+.menuFilter{
+
+  
+    background-color: white;
+   box-shadow: 5px 2px 7px #57575718;
+    width: 120px;
+    padding: 5px;
+    
+    font-size: 13px;
+    border-radius: 10px;
+    
+}
+
+.filterItem{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.251) ;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.filterItem:hover{
+    background-color: rgb(234, 232, 232);
+}
+
+
+.AnimatedDropdownButton{
+    font-size: 13px;
+    color: whitesmoke;
+    background-color: #F25379;
+    padding: 2px;
+    border-radius: 10px;
+ 
+}
+
+.AnimatedDropdownButton span{
+    
+    color: whitesmoke;
+   
+    
+ 
+}
+
+
+
+.filterImg{
+    width:25px;
+  
+}

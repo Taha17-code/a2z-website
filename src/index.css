@@ -5,9 +5,69 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+
 }
 
+*{
+  font-family: 'Tajawal', sans-serif;
+  color: #184081;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin: 0px;
+  
+
+ 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.RateNum{
+  color: #fcc921;
+}
+
+
+/* ================================= WEB SITE COLORS  ===================================== */
+/* MAIN COLORS
+
+RED
+#E7F0FF
+
+
+BLUE
+#4C85D6
+
+BACKGROUND COLOR 
+#F4F6F9 */
+
+
+/*
+
+LIGHT PURPLISH RED 
+#F25379
+
+BRIGHT PURPLISH RED 
+#E40078
+#953553
+
+
+LIGHT BLUE
+#ADCAF6
+
+
+BLUE GRAY 
+#87ABDD
+
+PALE BLUE 
+#E7F0FF 
+
+*/
+
+
+
+
+
+
