@@ -10,9 +10,9 @@ const AdminSideBar = () => {
     <Link to='/Admin/AllOrders' style={{textDecoration:'none'}}><p className='childCatg'  >إدارة الطلبات</p></Link>
     <Link to='/Admin/AllProducts' style={{textDecoration:'none'}}><p className='childCatg' >إدارة المنتجات</p></Link>
     <Link to='/Admin/AddBrand' style={{textDecoration:'none'}}><p className='childCatg' >إضافة براند </p></Link>
-    <Link to='/Admin/AllProducts' style={{textDecoration:'none'}}><p className='childCatg' > إضافة تصنيف</p></Link>
-    <Link to='/Admin/AllProducts' style={{textDecoration:'none'}}><p className='childCatg' > إضافة تصنيف فرعي</p></Link>
-    <Link to='/Admin/AllProducts' style={{textDecoration:'none'}}><p className='childCatg' > إضافة  منتج</p></Link>
+    <Link to='/Admin/AddCategory' style={{textDecoration:'none'}}><p className='childCatg' > إضافة تصنيف</p></Link>
+    <Link to='/Admin/AddSubCategory' style={{textDecoration:'none'}}><p className='childCatg' > إضافة تصنيف فرعي</p></Link>
+    <Link to='/Admin/AddProduct' style={{textDecoration:'none'}}><p className='childCatg' > إضافة  منتج</p></Link>
     </div>
   )
 }

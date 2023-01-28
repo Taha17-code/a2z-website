@@ -15,6 +15,9 @@ import AdminAllProductsPage from "./Pages/Admin/AdminAllProductsPage";
 import AdminAllOrdersPage from "./Pages/Admin/AdminAllOrdersPage";
 import AdminOrderDetailsPage from "./Pages/Admin/AdminOrderDetailsPage";
 import AdminAddBrandPage from "./Pages/Admin/AdminAddBrandPage";
+import AdminAddCategoryPage from "./Pages/Admin/AdminAddCategoryPage";
+import AdminAddSubCategoryPage from "./Pages/Admin/AdminAddSubCategoryPage";
+import AdminAddProdutPage from "./Pages/Admin/AdminAddProdutPage";
 
 
 function App() {
@@ -44,6 +47,10 @@ function App() {
 
      <Route path="/Admin/orders/20" element={<AdminOrderDetailsPage/>}/>
      <Route path="/Admin/AddBrand" element={<AdminAddBrandPage/>}/>
+     <Route path="/Admin/AddCategory" element={<AdminAddCategoryPage/>}/>
+     <Route path="/Admin/AddSubCategory" element={<AdminAddSubCategoryPage/>}/>
+
+     <Route path="/Admin/AddProduct" element={<AdminAddProdutPage/>}/>
 
 
 
