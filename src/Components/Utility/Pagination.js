@@ -1,9 +1,15 @@
 import React from 'react'
 import ReactPaginate from 'react-paginate';
 import '../../Sryles/PaginationPage.css'
-const PaginationPage = () => {
+const PaginationPage = ({numPageCounts,onPress}) => {
 
-    const handlePageClick=()=>{};
+    const handlePageClick=(data)=>{
+
+      onPress(data.selected+1);
+      
+    };
+
+
    
   return (
    
@@ -12,7 +18,7 @@ const PaginationPage = () => {
     nextLabel=" >"
     onPageChange={handlePageClick}
     pageRangeDisplayed={2}
-    pageCount={10}
+    pageCount={numPageCounts}
     previousLabel="< "
     renderOnZeroPageCount={null}
     containerClassName="pagination"
@@ -21,6 +27,7 @@ const PaginationPage = () => {
     nextClassName=''
     previousLinkClassName='page-num'
     nextLinkClassName='page-num'
+   
     
   />
  
