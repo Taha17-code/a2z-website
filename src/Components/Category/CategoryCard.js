@@ -5,7 +5,7 @@ const CategoryCard = ({title,image,backgroundColors}) => {
   return (
     
    
-   <div  className='childCard '  >
+   <div  className='childCard ' style={{marginTop:'50px'}} >
    <div className='itemsArrange'>
    <div style={{backgroundColor:backgroundColors}}>
 <img src={image} />

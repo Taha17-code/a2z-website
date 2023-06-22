@@ -15,31 +15,11 @@ import Brands from '../Brand/BrandsCard.js'
 import DiscountAd from './DiscountAd.js'
 import BrandsHome from '../Brand/BrandsHome.js'
 
-import { useSelector,useDispatch } from 'react-redux'
-import axios from 'axios'
-import { getAllCategory } from '../../Redux/Actions/categoryAction'
+import HomeCategroiesHook from '../../custom_hooks/categoryHooks/HomeCategroiesHook.js'
 
 const HomeCategory = () => {
 
-  const dispatch =useDispatch();
-   
-  useEffect(()=>{
-   dispatch(getAllCategory());
-  },[])
-
-  const category=useSelector(state=>state.allCategory.category.data); 
-  const loading=useSelector(state=>state.allCategory.loading); 
-
-
- 
-  console.log(category)
-  console.log(loading)
-
-  const colors=['#F25379','#ADCAF6','#E40078','#87ABDD','#F25379']
-
-  // <CategoryCard title={'العناية'} image={BodyCare} backgroundColors="#ADCAF6"/>
-  //     <CategoryCard title={'أجهزة'} image={devices} backgroundColors="#F25379"/>
-  //     <CategoryCard title={'العروض'} image={offers} backgroundColors="#ADCAF6"/>
+   const [category,loading,colors]=HomeCategroiesHook();
 
   return (
     <Container >
