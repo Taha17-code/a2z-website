@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import CategoryCard from './CategoryCard'
 import '../../Sryles/CategoryCard.css'
@@ -6,33 +6,31 @@ import clothes from '../../assets/Images/hoodie.png'
 import BodyCare from '../../assets/Images/BodyCare.png'
 import devices from '../../assets/Images/laptop.png'
 import offers from '../../assets/Images/offers.png'
+import { useDispatch, useSelector } from 'react-redux'
 
-const CategoryContainer = () => {
+
+const CategoryContainer = ({data,loading}) => {
+
+  const colors=['#87ABDD','#ADCAF6','#F25379','#E40078']
   return (
+    
     <Container>
       
        
     <Row className='card' >
-    <CategoryCard title={'الملابس'} image={clothes} backgroundColors="#F25379"/>
-    <CategoryCard title={'العناية'} image={BodyCare} backgroundColors="#ADCAF6"/>
-    <CategoryCard title={'أجهزة'} image={devices} backgroundColors="#F25379"/>
-    <CategoryCard title={'العروض'} image={offers} backgroundColors="#ADCAF6"/>
+    {
+      loading==false?(
 
+        data?(data.map((item,index)=>{
+          return(<CategoryCard key={index} title={item.name} image={item.image} backgroundColors={colors[Math.floor(Math.random()*3)+1]}/>)
+        })):
+        <h6>لاتوجد تصنيفات..</h6>
 
-    <CategoryCard title={'الملابس'} image={clothes} backgroundColors="#F25379"/>
-    <CategoryCard title={'العناية'} image={BodyCare} backgroundColors="#ADCAF6"/>
-    <CategoryCard title={'أجهزة'} image={devices} backgroundColors="#F25379"/>
-    <CategoryCard title={'العروض'} image={offers} backgroundColors="#ADCAF6"/>
+        ):<h6>لاتوجد تصنيفات..</h6>
 
+    }
+    
 
-
-    <CategoryCard title={'الملابس'} image={clothes} backgroundColors="#F25379"/>
-    <CategoryCard title={'العناية'} image={BodyCare} backgroundColors="#ADCAF6"/>
-    <CategoryCard title={'أجهزة'} image={devices} backgroundColors="#F25379"/>
-    <CategoryCard title={'العروض'} image={offers} backgroundColors="#ADCAF6"/>
-
-    <CategoryCard title={'الملابس'} image={clothes} backgroundColors="#F25379"/>
-    <CategoryCard title={'العناية'} image={BodyCare} backgroundColors="#ADCAF6"/>
    
     </Row>
     </Container>

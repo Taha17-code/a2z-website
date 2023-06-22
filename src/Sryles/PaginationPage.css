@@ -47,3 +47,9 @@
     color: #F4F6F9;
 
 }
+
+.page-numSt::selection{
+
+    background-color: #87ABDD;
+    color: #F4F6F9;
+}

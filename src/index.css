@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   width: 100%;
-
+  font-size: 12px;
 }
 
 *{
@@ -30,6 +30,10 @@ code {
 }
 
 
+#upload-photo{
+  opacity: 0;
+  position: absolute;
+}
 /* ================================= WEB SITE COLORS  ===================================== */
 /* MAIN COLORS
 

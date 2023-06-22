@@ -23,10 +23,13 @@ const Login = () => {
      </span>
 
   
-     <Link to={'/Admin/AllProducts'}>
+     <Link to={'/Admin/AllOrders'}>
      <span style={{color:'#E40078',cursor:'pointer'}}>لوحة التحكم </span>
      </Link>
       
+     <Link to={'/User/AllOrders'}>
+     <span style={{color:'#E40078',cursor:'pointer'}}>لوحة التحكم  للمستخدم</span>
+     </Link>
       </div>
       </Col>
 
